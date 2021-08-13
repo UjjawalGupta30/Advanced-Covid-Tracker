@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Line } from "react-chartjs-2";
+import { Line} from "react-chartjs-2";
 import numeral from "numeral";
+
+
 
 // const options = {
 //   legend: {
@@ -118,11 +120,13 @@ function LineGraph({ casesType }) {
             labels: labelsData,
             datasets: [
               {
-                label: "First dataset",
+                
+                label: " Worldwide Covid Cases",
                 data: secondData,
                 fill: true,
                 backgroundColor: "rgba(75,192,192,0.2)",
-                borderColor: "rgba(75,192,192,1)"
+                borderColor: "rgba(75,192,192,1)",
+                
               },
             ]
           }
