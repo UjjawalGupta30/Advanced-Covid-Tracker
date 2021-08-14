@@ -7,13 +7,13 @@ const casesTypeColors = {
       hex: "#CC1034",
       rgb: "rgb(204, 16, 52)",
       half_op: "rgba(204, 16, 52, 0.5)",
-      multiplier: 400,
+      multiplier: 300,
     },
     recovered: {
-      hex: "#7dd71d",
+      hex: "#0000FF",
       rgb: "rgb(125, 215, 29)",
       half_op: "rgba(125, 215, 29, 0.5)",
-      multiplier: 300,
+      multiplier: 200,
     },
     deaths: {
       hex: "#fb4443",
@@ -25,7 +25,7 @@ const casesTypeColors = {
         hex: "#78869",
         rgb: "rgb(251, 68, 67)",
         half_op: "rgba(251, 68, 67, 0.5)",
-        multiplier: 100,
+        multiplier: 80,
       },
   };
 
