@@ -27,9 +27,9 @@ function App() {
     fetch("https://disease.sh/v3/covid-19/all")
     .then((response)=> response.json())
     .then((data)=>{
-      setCountryInfo(data);
-    }) ;
-  },[]);
+     setCountryInfo(data);
+    },
+  []);
     
 
   useEffect(() => {
@@ -62,6 +62,8 @@ function App() {
       .then((data) => {
         setCountry(countryCode);
         setCountryInfo(data);
+        setMapCenter([data.countryInfo.lat,data.countryInfo.long]);
+        setMapZoom(4);
       });
   };
 
@@ -126,4 +128,4 @@ function App() {
   );
 }
 
-export default App;
+export default App();
