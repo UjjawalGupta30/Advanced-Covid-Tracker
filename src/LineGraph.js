@@ -72,7 +72,7 @@ const buildChartData = (data, casesType) => {
       chartData.push(newDataPoint);
     }
     lastDataPoint = data.cases[date];
-    console.log(lastDataPoint, date);
+    // console.log(lastDataPoint, date);
   }
 
 
