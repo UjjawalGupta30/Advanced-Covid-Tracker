@@ -101,7 +101,7 @@ function App() {
             cases={prettyPrintStat(countryInfo.todayCases)}
             total={prettyPrintStat(countryInfo.cases)}
           />
-          <InfoBox
+          <InfoBox 
            
           active={casesType === "recovered"}
            onClick={(e)=> setCasesType('recovered')}
@@ -120,7 +120,7 @@ function App() {
           <InfoBox
            isRed
           // active={casesType === "tests"}
-          //  onClick={(e)=> setCasesType('tests')}
+           onClick={(e)=> setCasesType('tests')}
             title="Total Tests"
             cases={prettyPrintStat(countryInfo.tests)}
             total={prettyPrintStat(countryInfo.tests)}
@@ -137,7 +137,7 @@ function App() {
         <CardContent>
           <h3>Live cases by country</h3>
           <Table countries={tableData}></Table>
-          <h3>Worldwide New {casesType}</h3>
+          <h3 className="app_graphTitle">Worldwide New {casesType}</h3>
           <LineGraph casesType={casesType}/>
         </CardContent>
       </Card>
