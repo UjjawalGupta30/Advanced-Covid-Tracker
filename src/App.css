@@ -9,12 +9,24 @@
    padding: 20px;
 
  }
- 
+ .app_dropdown{
+   background-color: white;
+ }
+ .app_right{
+   display: flex;
+   flex-direction: column;
+ }
+ .app_right .MuiCardContent-root{
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+ }
  .app_header{
    display: flex;
    align-items: center;
    margin-bottom: 20px;
    justify-content: space-between;
+
  }
  
  .app_left{
@@ -26,6 +38,16 @@
    justify-content: space-evenly;
 
 
+ }
+ .app_header > h1{
+   color:#fc3c3c;
+   font-size:2rem;
+
+ }
+ .app_graphTitle{
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
  }
 
  @media (max-width:990px) {
